@@ -5,3 +5,22 @@
 Но если это слишком сложно, то используйте метод сортировки, который не рассматривался на уроках
 '''
 
+import random
+
+
+m = random.randint(1, 6)
+
+N = 2 * m + 1
+arr = []
+for _ in range(N):
+    m = random.randint(1, 99)
+    arr.append(m)
+
+sort_arr = sorted(arr)
+
+length = len(sort_arr)
+r = length // 2
+
+print('Не сортированный массив', arr)
+print('Отсортированный массив:', sort_arr)
+print('Медиана:', sort_arr[r])
